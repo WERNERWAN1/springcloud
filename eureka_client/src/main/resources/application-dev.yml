@@ -1,0 +1,1 @@
+server:  port: 9538spring:  application:    name: cloudEurekaClienteureka:  instance:    hostname: localhost  client:    fetch-registry: true    register-with-eureka: true    service-url:      defaultZone: http://${eureka.instance.hostname}:9527/eureka/

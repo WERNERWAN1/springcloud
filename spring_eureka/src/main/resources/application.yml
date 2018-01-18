@@ -1,0 +1,1 @@
+server:  port: 9527spring:  application:    name: cloudEurekaeureka:  instance:    hostname: localhost  client:  #此为注册中心则为false    register-with-eureka: false    fetch-registry: false    service-url:      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/

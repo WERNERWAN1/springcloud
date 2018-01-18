@@ -1,0 +1,1 @@
+package com.eureka.feign.error;import com.eureka.feign.service.IFeignService;import org.springframework.stereotype.Component;@Componentpublic class ErrorMessage implements IFeignService {    @Override    public String hi() {        return "SORRY SERVER BROKE";    }}
